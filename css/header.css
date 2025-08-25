@@ -1,0 +1,67 @@
+/* Botón Inicio en el header */
+.btn-inicio {
+    background: #ffd600;
+    color: #222;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 18px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 18px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.btn-inicio:hover {
+    background: #ffe066;
+}
+/* Estilos para el header y barra de búsqueda */
+.header-flex {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 24px;
+    margin-top: 10px;
+    margin-left: 80px; /* separa el contenido del logo */
+}
+.busqueda {
+    display: flex;
+    align-items: center;
+    background: #18181b;
+    border-radius: 8px;
+    padding: 4px 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+.busqueda input[type="text"] {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #ffd600;
+    font-size: 16px;
+    padding: 8px 8px 8px 0;
+    width: 180px;
+}
+.busqueda input[type="text"]::placeholder {
+    color: #ffd60099;
+}
+.busqueda button {
+    background: #ff5722;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 8px;
+    transition: background 0.2s;
+}
+.busqueda button:hover {
+    background: #ff784e;
+    color: #18181b;
+}
+/* Logo alineado a la izquierda */
+.logo-header {
+    height: 80px;
+    margin: -12px 0 8px 0;
+    display: block;
+    float: left;
+}
