@@ -1,3 +1,14 @@
+/* GLOBAL: Evitar desbordamiento y sumar paddings/borders al ancho */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    overflow-x: hidden;
+    max-width: 100vw;
+}
 /* Botón de carrito moderno */
 .carrito {
     position: relative;
@@ -316,31 +327,38 @@ footer .github {
 /* RESPONSIVE: Mejoras para móviles */
 @media (max-width: 700px) {
     main {
-        max-width: 100vw;
-        margin: 10px auto;
-        padding: 8px;
-        border-radius: 8px;
+    max-width: 100vw;
+    margin: 10px auto;
+    padding: 8px;
+    border-radius: 8px;
+    overflow-x: hidden;
     }
     .productos {
-        flex-direction: column;
-        gap: 10px;
-        padding: 0 2vw;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 2vw;
+    max-width: 100vw;
+    overflow-x: hidden;
     }
     .productos > section {
-        flex-direction: column;
-        gap: 10px;
-        width: 100%;
-        padding: 0;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding: 0;
+    max-width: 100vw;
+    overflow-x: hidden;
     }
     .producto {
-        width: 98vw;
-        max-width: 360px;
-        margin: 0 auto;
-        padding: 10px;
+    width: 98vw;
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
     }
     .producto img {
-        max-width: 90vw;
-        height: auto;
+    max-width: 90vw;
+    height: auto;
+    box-sizing: border-box;
     }
     header {
         flex-direction: column !important;
